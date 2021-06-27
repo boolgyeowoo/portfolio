@@ -15,21 +15,30 @@ div.photo_descrpt {
     height: 60vh;
     max-height: calc(97vw/2.39);
     min-width: 320px;
-    padding: 5vh 1vw;
+    padding: 7vh 2vw 7vh 2.5vw;
     background-color: #222222;
-    margin: 0 1vw;
+    margin: 0 1vw 0 2vw;
 }
 
 h2.descrpt_title {
-    margin-top: 0;
+    margin: 0 0 24px 6px;
 }
 
+div.sub_descrpt {
+    margin-left: 3px;
+    font-size: 1rem;
+    color: var(--darker-tc);
+}
+
+div.main_descrpt {
+    margin-top: 12px;
+}
 
 #bb_img {
     width: 97vw;
-    max-width: calc(77vh*2.39);
+    max-width: calc(80vh*2.39);
     min-width: 720px;
-    padding: 0 1.5vw;
+    margin: 0 1.5vw;
 }
 
 footer {
