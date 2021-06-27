@@ -6,6 +6,7 @@ tc = text color
 */
 * {
     --site-bgc: #292929;
+    --darker-bgc: #111111;
     --main-tc: #f0f0f0;
     --darker-tc: #616161;
     
@@ -33,6 +34,54 @@ body {
     font: 1.1rem "Crimson Text";
 }
 
+header, div.headercontent, div.mainheader, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+div.headercontent {
+    max-width: 1440px;
+    flex-direction: row;
+}
+
+.nav_link {
+    transition: all 125ms;
+    color: #111111;
+    border: rgba(0, 0, 0, 0) solid 1px;
+    box-sizing: border-box;
+    height: 6vh;
+    width: 10vw;
+    min-height: 40px;
+    max-height: 80px;
+    min-width: 120px;
+    max-width: 200px;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+
+.nav_link:hover {
+    transition: all 200ms;
+    border: #111111 solid 1px;
+}
+
+.nav_link:active {
+    transition: all 200ms;
+    color: #fafafa;
+    background-color: #111111;
+    border: #111111 solid 1px;
+}
+
+.selected {
+    color: #7f7f7f;
+}
+
+.nav_mobl {
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font: 400 normal 2.2rem "Playfair Display";
 }
@@ -40,4 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     color: var(--darker-tc);
     font-size: 0.85rem;
+    height: 4vh;
+}
+
+p.footer {
+    margin: 5px 0;
 }
