@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display&display=swap');
+
+/*variables*/
+/*bg = background
+tc = text color
+*/
+* {
+    --site-bgc: #292929;
+    --main-tc: #f0f0f0;
+    --darker-tc: #616161;
+    
+}
+
+/*css clear*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*start templete css*/
+
+body {
+    background-color: var(--site-bgc);
+    color: var(--main-tc);
+    font: 1.1rem "Crimson Text";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: 400 normal 2.2rem "Playfair Display";
+}
+
+footer {
+    color: var(--darker-tc);
+    font-size: 0.85rem;
+}
