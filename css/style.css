@@ -12,6 +12,10 @@ tc = text color
 }
 
 /*css clear*/
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
