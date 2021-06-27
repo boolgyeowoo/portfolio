@@ -1,7 +1,6 @@
 header {
     position: fixed;
     top: 0;
-    height: 7vh;
 }
 
 div.maincontent {
@@ -13,6 +12,8 @@ div.maincontent {
 }
 
 div.photo_descrpt {
+    height: 60vh;
+    max-height: calc(97vw/2.39);
     min-width: 320px;
     padding: 5vh 1vw;
     background-color: #222222;
@@ -26,6 +27,8 @@ h2.descrpt_title {
 
 #bb_img {
     width: 97vw;
+    max-width: calc(77vh*2.39);
+    min-width: 720px;
     padding: 0 1.5vw;
 }
 

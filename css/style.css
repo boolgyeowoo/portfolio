@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display&display=swap');
 
 /*variables*/
-/*bg = background
+/*
+bg = background
 tc = text color
 */
 * {
@@ -9,7 +10,6 @@ tc = text color
     --darker-bgc: #111111;
     --main-tc: #f0f0f0;
     --darker-tc: #616161;
-    
 }
 
 /*css clear*/
@@ -28,10 +28,12 @@ ul {
 
 /*start templete css*/
 
+
 body {
     background-color: var(--site-bgc);
     color: var(--main-tc);
     font: 1.1rem "Crimson Text";
+    scrollbar-color: dark;
 }
 
 header, div.headercontent, div.mainheader, footer {
@@ -42,13 +44,19 @@ header, div.headercontent, div.mainheader, footer {
 }
 
 div.headercontent {
-    max-width: 1440px;
     flex-direction: row;
+    padding: 1vh 0;
+    height: 7vh;
+}
+
+.sitelogo {
+    position: relative;
+    left: 1vw;
 }
 
 .nav_link {
     transition: all 125ms;
-    color: #111111;
+    color: var(--main-tc);
     border: rgba(0, 0, 0, 0) solid 1px;
     box-sizing: border-box;
     height: 6vh;
@@ -76,6 +84,17 @@ div.headercontent {
 
 .selected {
     color: #7f7f7f;
+}
+
+ul.nav_main {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    column-count: 4;
+    margin: 0px;
+    padding: 0px;
+    column-gap: 4vw;
+    padding-left: 20px;
 }
 
 .nav_mobl {
