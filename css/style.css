@@ -35,6 +35,10 @@ body {
     color: var(--main-tc);
     font: 1.2rem "Crimson Text";
     scrollbar-color: dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header, div.headercontent, div.mainheader, footer {
@@ -44,15 +48,36 @@ header, div.headercontent, div.mainheader, footer {
     width: 100%;
 }
 
-div.headercontent {
+header {
     flex-direction: row;
     padding: 1vh 0;
     height: 7vh;
+    background-color: var(--darker-bgc);
 }
 
-.sitelogo {
-    position: relative;
-    left: 1vw;
+div.sitelogo {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+img.sitelogo {
+    transition: all 150ms;
+    width: 20vw;
+    padding: 10px;
+    min-width: 100px;
+    max-height: 75px;
+}
+
+img.sitelogo:hover {
+    transition: all 250ms;
+    background-color: rgba(0, 0, 0, 0.025);
+    width: 20vw;
+}
+
+img.sitelogo:active {
+    transition: all 250ms;
+    width: 20vw;
 }
 
 .nav_link {
